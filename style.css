@@ -169,3 +169,31 @@ footer{
         border-radius: 25px;
     }
 }
+
+/* Project 1 */
+#projectSection{
+    display: grid;
+    grid-template: repeat(20, 10rem) / repeat(4, 12.15%) 3rem repeat(4, 12.15%);
+    height: 200rem;
+    row-gap: 3rem;
+    margin: 3rem 1.5rem;
+}
+#projectName{
+    border: red solid 1px;
+    grid-area: 1 / 1 / span 1 / 4;
+}
+
+#projectDescription{
+    border: green solid 1px;
+    grid-area: 2 / 1 / 16 / 5;
+}
+
+#projectCode{
+    border: yellow solid 1px;
+    grid-area: 2 / 6 / span 7 / 10;
+}
+
+#projectWebsite{
+    border: blue solid 1px;
+    grid-area: 9 / 6 / span 7 / 10;
+}
