@@ -21,12 +21,25 @@ nav{
         margin-left: 1rem;
         float: left;
         border-radius: 25px;
+        transition:all 50ms ease-in-out;
+    }
+    img:hover{
+        transform: scale(1.2);
     }
     a{
         margin-right: 20px;
         float: right;
         margin-top: 1.5rem;
-        color: #DCEDFF;
+        color: black;
+        text-decoration: none;
+        background-color: #ffffff;
+        border-radius: 25px;
+        padding: 0.3rem;
+        transition:all 50ms ease-in-out;
+    }
+    a:hover{
+        background-color: #63D471;
+        transform: scale(1.2);
     }
 }
 
@@ -46,11 +59,15 @@ nav{
         z-index: 1;
         background-color:#63D471;
         border: 1px seagreen solid;
-        
+        transition: all 50ms ease-in-out;
         p{
             text-align: left;
             padding: 0 0.5rem;
         }
+    }
+    .project:hover{
+        transform: scale(1.2);
+        z-index: 100 !important; 
     }
 
     #project1{
@@ -74,11 +91,11 @@ nav{
     }
     #side1{
         grid-area: 35 / 2 / span 16 / span 6;
-        z-index: 2;
+        z-index: 0;
     }
     #side2{
         grid-area: 35 / 44 / span 16 / span 6;
-        z-index: 2;
+        z-index: 0;
     }
     img{
         border-bottom: #63D471 3px solid;
@@ -97,6 +114,7 @@ nav{
         width: 90%;
         margin: 0 auto;
         text-align: center;
+        border-radius: 1rem;
         h1{
             padding-top: 1rem;
             font-size: 3rem;
@@ -117,6 +135,7 @@ nav{
         background-color: #08839B;
         width:inherit;
         height: 100%;
+        border-radius: 1rem;
         h2{
             text-align: center;
         }
