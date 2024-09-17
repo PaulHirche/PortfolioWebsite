@@ -179,21 +179,117 @@ footer{
     margin: 3rem 1.5rem;
 }
 #projectName{
-    border: red solid 1px;
-    grid-area: 1 / 1 / span 1 / 4;
+    background-color: #63D471;
+    border-radius: 3rem;
+    text-align: center;
+    align-self: center;
+    font-size: 3rem;
+    grid-area: 1 / 1 / span 1 / 10;
 }
 
 #projectDescription{
-    border: green solid 1px;
-    grid-area: 2 / 1 / 16 / 5;
+    border-radius: 1rem;
+    background-color: #202020;
+    color: #63D471;
+    grid-area: 2 / 1 / span 7 / 5;
+    font-size: 2rem;
+    padding: 1rem;
+    overflow: scroll;
+    p{
+        padding-left: 2.2rem;
+        
+    }
 }
 
 #projectCode{
-    border: yellow solid 1px;
+    /* ---- */
+    pre {
+        background-color: #63D471;  /* Set a dark background color */
+        padding: 10px;
+        border-radius: 5px;
+        overflow: auto;
+        width: 96%;
+    }
+
+    code,
+    .hljs {
+        color: #abb2bf;  /* Set a contrasting text color */
+        background-color: #010101;
+    }
+
+    /* Custom styles for syntax highlighting */
+    .hljs-keyword,
+    .hljs-selector-tag,
+    .hljs-literal,
+    .hljs-section,
+    .hljs-link {
+        color: #c678dd;  /* Keywords color */
+    }
+
+    .hljs-attribute,
+    .token.attr-name {
+        color: #ff7b00;  /* Attribute name color e.g., class, id */
+    }
+
+    .hljs-tag .hljs-attr,.hljs-tag .hljs-name {
+        color: #c5c5c5
+    }
+
+    .hljs-punctuation, .hljs-tag {
+        color: #63D471;
+    }
+
+    .hljs-string,
+    .token.attr-value {
+        color: #98c379;  /* String and attribute values color */
+    }
+
+    .hljs-comment,
+    .hljs-quote,
+    .hljs-deletion,
+    .hljs-meta,
+    .token.comment,
+    .token.block-comment,
+    .token.prolog,
+    .token.doctype,
+    .token.cdata {
+        color: #5c6370;  /* Comment color */
+    }
+
+    .hljs-keyword,
+    .hljs-function,
+    .token.function {
+        color: #61afef;  /* Functions color */
+    }
+
+    .hljs-number,
+    .hljs-regexp,
+    .token.number,
+    .token.boolean,
+    .token.variable {
+        color: #d19a66;  /* Numbers and variable color */
+    }
+     /* ----- */
+     
     grid-area: 2 / 6 / span 7 / 10;
+    background-color: #202020;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    overflow: scroll;
 }
 
 #projectWebsite{
-    border: blue solid 1px;
-    grid-area: 9 / 6 / span 7 / 10;
+    background-color: #202020;
+    color: #63D471;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    grid-area: 9 / 1 / span 7 / 10;
+    display: flex;
+    text-align: center;
+    img{
+        border: #63D471 0.2rem solid;
+        width: 70%;
+        height: auto;
+        margin-top: 1rem;
+    }
 }
