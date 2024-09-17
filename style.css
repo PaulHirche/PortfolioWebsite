@@ -72,3 +72,41 @@ nav{
         grid-area: 25 / 20 / span 30 / span 18;
     }
 }
+
+/* introduction Section */
+#introduction{
+    align-items: center;
+    display: flexbox;
+    width: 100%;
+
+    #nameAge{
+        border: red 1px solid;
+        height: 10rem;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        h1{
+            font-size: 3rem;
+            margin: 1rem;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+    .divIntroduction{
+        display: flex;
+        width: 90%;
+        gap: 2%;
+        margin-left: 5%;
+    }
+    .divIntroduction > div{
+        border: 1px black solid;
+        width:inherit;
+        height: 5rem;
+        h2{
+            text-align: center;
+        }
+    }
+}
+
+/* Footer */
