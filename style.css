@@ -2,9 +2,12 @@ html{
     margin: 0;
     padding: 0;
 }
+
+/* Navbar */
 nav{
     width: 100%;
-    align-items: center;
+    height: 3rem;
+    padding-top: 1.5rem;
     position: sticky; 
     top: 0;
     z-index: 1;
@@ -16,5 +19,56 @@ nav{
     a{
         margin-right: 20px;
         float: right;
+    }
+}
+
+/* Main-Section */
+#start{
+    border: lightgray 3px solid;
+    padding: 1rem;
+    border-radius: 50px;
+    #startContainer{
+        display: grid;
+        height: 40rem;
+        grid-template: repeat(50, 2%) / repeat(50, 2%);        
+    }
+    .project{
+        border-radius: 25px;
+        text-align: center;
+        z-index: 1;
+        background-color:aquamarine;
+        border: 1px seagreen solid;
+    }
+
+    #project1{
+        grid-area: 2 / 21 / span 20 / span 10;
+    }
+    #project2{
+        grid-area: 7 / 12 / span 18 / span 8;
+        z-index: 2;
+    }
+    #project3{
+        grid-area: 7 / 32 / span 18 / span 8;
+        z-index: 2;
+    }
+    #project4{
+        grid-area: 19 / 6 / span 18 / span 8;
+        z-index: 1;
+    }
+    #project5{
+        grid-area: 19 / 38 / span 18 / span 8;
+        z-index: 1;
+    }
+    #side1{
+        grid-area: 35 / 2 / span 16 / span 6;
+        z-index: 2;
+    }
+    #side2{
+        grid-area: 35 / 44 / span 16 / span 6;
+        z-index: 2;
+    }
+    img{
+        border-bottom: lightgray 3px solid;
+        grid-area: 25 / 20 / span 30 / span 18;
     }
 }
