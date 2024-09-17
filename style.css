@@ -16,6 +16,8 @@ nav{
     align-content: center;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
+    z-index: 99;
+    opacity: 0.95;
     img{
         height: 4rem;
         margin-left: 1rem;
@@ -67,7 +69,7 @@ nav{
     }
     .project:hover{
         transform: scale(1.2);
-        z-index: 100 !important; 
+        z-index: 10 !important; 
     }
 
     #project1{
